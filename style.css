@@ -1094,25 +1094,24 @@ ul { list-style: none; }
   .nav.menu-open {
     bottom: 0;
     background: #0a0a0a;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
     backdrop-filter: none;
-  }
-  .nav.menu-open .nav__inner {
-    padding: 20px;
-    flex-shrink: 0;
   }
 
   .nav__links {
     display: none;
+  }
+  .nav__links.open {
+    display: flex;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    bottom: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 32px;
-    flex: 1;
+    gap: 40px;
   }
-  .nav__links.open { display: flex; }
   .nav__links a { font-size: 1.2rem; }
   .nav__cta { font-size: 1.1rem !important; padding: 14px 32px !important; }
 
