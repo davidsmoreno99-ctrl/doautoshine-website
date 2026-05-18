@@ -13,6 +13,7 @@
   burger.addEventListener('click', () => {
     burger.classList.toggle('open');
     navLinks.classList.toggle('open');
+    nav.classList.toggle('menu-open');
     document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
   });
 
@@ -21,6 +22,7 @@
     link.addEventListener('click', () => {
       burger.classList.remove('open');
       navLinks.classList.remove('open');
+      nav.classList.remove('menu-open');
       document.body.style.overflow = '';
     });
   });
